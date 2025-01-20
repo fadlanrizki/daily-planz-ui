@@ -12,18 +12,20 @@ const Login = () => {
 
   return (
     <div className="w-100 min-h-screen overflow-hidden">
-      <Logo />
       <div className="flex items-center">
-        <div className="w-1/2 flex justify-center">
-          <img
-            className="block h-[50em] w-[50em] border-blue-500"
-            src={LoginBanner}
-            alt="banner"
-          />
+        <div className="w-1/2">
+          <Logo />
+          <div className="flex justify-center">
+            <img
+              className="block h-[50em] w-[50em] border-blue-500"
+              src={LoginBanner}
+              alt="banner"
+            />
+          </div>
         </div>
-        <div className="w-1/2 h-full flex justify-center">
+        <div className="w-1/2 h-screen flex justify-center items-center bg-primary">
           <form
-            className="w-2/4 flex flex-col gap-y-10"
+            className="w-2/4 max-h-fit flex flex-col gap-y-10 border py-[2em] px-[2em] rounded-md bg-white shadow-lg"
             onSubmit={handleSubmit}
           >
             <h2 className="text-center font-bold text-lg text-primary">
